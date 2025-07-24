@@ -1,0 +1,47 @@
+# Fichiers et dossiers à ignorer lors du build Docker
+# pour réduire la taille du contexte et accélérer le build
+
+# Dossiers de build et cache
+target/
+.mvn/wrapper/maven-wrapper.jar
+*.log
+
+# IDE et éditeurs
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Documentation
+README.md
+docs/
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Uploads locaux (seront créés dans le conteneur)
+uploads/
+
+# Logs
+logs/
+*.log
+
+# Tests
+src/test/
